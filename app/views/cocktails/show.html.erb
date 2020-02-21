@@ -1,5 +1,3 @@
-<h1>Details about cocktails</h1>
-
 <h2><%= @cocktail.name %></h2>
 
 
@@ -12,7 +10,9 @@
   <% end %>
 </ul>
 
-<%= link_to 'List cocktails', cocktails_path %>
+<br>
+
+<%= link_to 'List cocktails', cocktails_path, class: "btn btn-primary" %>
 <br>
 <br>
-<%= link_to 'Create a dose / ingredient', new_cocktail_dose_path(@cocktail) %>
+<%= link_to 'Create a dose / ingredient', new_cocktail_dose_path(@cocktail), class: "btb btn-dark " %>

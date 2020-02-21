@@ -1,3 +1,11 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= asset_path 'gin-cocktails-main.jpg'%>');">
+  <div class="container">
+    <h1>Fancy Cocktails<strong></h1>
+    <p>Best cockails in London!</p>
+  </div>
+</div>
+<br>
+
 <% @cocktails.each do |cocktail| %>
   <cocktail>
     <%= link_to cocktail.name, cocktail_path(cocktail), class: "btn btn-primary"%>
